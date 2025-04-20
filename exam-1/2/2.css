@@ -1,0 +1,28 @@
+.container {
+    font-size: 14px;
+}
+
+.container .header {
+    font-size: 18px;
+}
+
+.container .shop-list {
+    list-style: none;
+    margin-left: -15px;
+}
+
+.container .shop-list li.item {
+    color: green;
+}
+
+.container .shop-list .item {
+    /* Explain why does this color not works, and how to fix make it work on 1st list */
+    /* Because the CSS priority  of .container .shop-list li.item is higher than .container .shop-list .item. */
+    color: blue;
+}
+
+
+/* Write styling make every other line give background color to next one */
+.container .shop-list li.item:nth-child(even) {
+    background-color: #e4e4e4;
+}

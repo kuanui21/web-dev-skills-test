@@ -1,0 +1,26 @@
+.day-button {
+  width: 50px;
+  height: 36px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.day-button:hover:not(:disabled) {
+  background: #e6e6e6;
+}
+
+.day-button.today {
+  background-color: #ffff76;
+}
+
+.day-button.selected,
+.day-button.in-range {
+  background-color: #006edc;
+  color: white;
+}
+
+.day-button.non-current {
+  color: #757575;
+  cursor: not-allowed;
+}
